@@ -32,7 +32,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   <meta name="twitter:description" content="One ATM offers seamless AEPS, money transfer, UPI, and more payment solutions for a cashless India." />
   <meta name="twitter:image" content="/path-to-your-twitter-image.jpg" />
 
-  <link rel="icon" href="/logox.png"  />
+  <link rel="icon" type="favicon" href="/logox.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/logox.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="/logox.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/logox.png" />
