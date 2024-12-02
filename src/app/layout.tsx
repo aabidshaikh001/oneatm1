@@ -12,7 +12,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <HelmetProvider>
-        <Helmet>
+        <head>
         
         <title>One ATM - One Nation, One Payment - AEPS, Money Transfer, UPI</title>
   <meta name="description" content="One ATM offers seamless AEPS, money transfer, UPI, and more payment solutions for a cashless India. Experience a unified, secure, and efficient payment system." />
@@ -37,7 +37,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   <link rel="icon" type="image/png" sizes="32x32" href="/logox.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/logox.png" />
   <link rel="manifest" href="/site.webmanifest" />
-        </Helmet>
+        </head>
 
       <body>
         <Router>
