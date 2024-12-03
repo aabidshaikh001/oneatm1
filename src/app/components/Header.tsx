@@ -130,7 +130,24 @@ const Header: React.FC = () => {
                     </Link>
                   )
                 )}
+                
+         {/* Action Buttons */}
+<div className="flex flex-col sm:flex-row gap-2">
+  <a
+    href="https://login.oneatm.in/login"
+    className="text-white bg-blue-800 hover:bg-blue-900 flex items-center justify-center px-3 py-2 rounded-lg text-sm sm:text-base sm:px-4"
+  >
+    Login <FaUser className="ml-2" />
+  </a>
+  <a
+    href="https://api.oneatm.in/"
+    className="text-white bg-blue-400 hover:bg-blue-500 flex items-center justify-center px-3 py-2 rounded-lg text-sm sm:text-base sm:px-4"
+  >
+    API Login <AiFillApi className="ml-2" />
+  </a>
+</div>
               </div>
+              
             </div>
           </div>
         )}
