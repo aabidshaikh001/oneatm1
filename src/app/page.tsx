@@ -18,24 +18,6 @@ import { Link } from "react-router-dom";
 import "./globals.css";
 import Image from 'next/image';
 
-const services = [
-  { icon: <CreditCardIcon className="h-8 w-8 text-white" />, label: 'Bank Cards' },
-  { icon: <UserGroupIcon className="h-8 w-8 text-white" />, label: 'AEPS USSD' },
-  { icon: <GlobeAltIcon className="h-8 w-8 text-white" />, label: 'UPI' },
-  { icon: <WalletIcon className="h-8 w-8 text-white" />, label: 'Mobile Wallet' },
-  { icon: <CreditCardIcon className="h-8 w-8 text-white" />, label: 'Bank Prepaid Cards' },
-  { icon: <ShoppingCartIcon className="h-8 w-8 text-white" />, label: 'POS Machines' },
-  { icon: <DevicePhoneMobileIcon className="h-8 w-8 text-white" />, label: 'Micro ATMs' },
-  { icon: <PhoneIcon className="h-8 w-8 text-white" />, label: 'Mobile Banking' },
-  { icon: <ComputerDesktopIcon className="h-8 w-8 text-white" />, label: 'Internet Banking' },
-];
-const faqItems = [
-  { question: "What is OneATM?", answer: "OneATM is a digital solution providing seamless banking services including UPI, mobile wallets, and more for small and large businesses." },
-  { question: "How do I join OneATM?", answer: "You can join by clicking the 'Join Now' button and following the registration process." },
-  { question: "What services are available through OneATM?", answer: "OneATM offers services such as AEPS USSD, POS machines, mobile wallets, and micro ATMs, among others." },
-  { question: "Is there a mobile app for OneATM?", answer: "Yes, OneATM offers a mobile app for convenient banking and payments on the go." },
-];
-
 
 const HomePage = () => {
   const [openFAQ, setOpenFAQ] = useState<number | null>(null);
@@ -113,38 +95,118 @@ const HomePage = () => {
   
   
        {/* Our Services Section */}
-       <div className="w-full max-w-7xl mx-auto py-20 ">
-        <h2 className="text-3xl font-bold text-blue-600 text-center mb-8" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-          Our Services
-        </h2>
-        
-        <div className="flex items-center justify-center space-x-5">
-          {/* Left Arrow */}
-          <button onClick={scrollLeft} className="p-2 rounded-full bg-gray-200 hover:bg-gray-300">
-            <ArrowLeftIcon className="h-5 w-5 text-blue-600" />
-          </button>
+<div className="w-full max-w-7xl mx-auto py-20">
+  <h2
+    className="text-3xl font-bold text-blue-600 text-center mb-8"
+    style={{ fontFamily: "Montserrat, sans-serif" }}
+  >
+    Our Services
+  </h2>
 
-          {/* Services Scroll Container */}
-          <div ref={servicesRef} className="service-scroll-container flex overflow-x-auto space-x-6 pb-4">
-            {services.map((service, index) => (
-              <div
-                key={index}
-                className="service-card flex flex-col items-center text-center p-6 cursor-pointer rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl bg-white border border-gray-300"
-              >
-                <div className="bg-blue-600 p-3 rounded-full mb-4 shadow-md">
-                  {service.icon}
-                </div>
-                <span className="font-semibold text-lg text-gray-800">{service.label}</span>
-              </div>
-            ))}
-          </div>
+  <div className="flex items-center justify-center space-x-5">
+    {/* Left Arrow */}
+    <button
+      onClick={scrollLeft}
+      className="p-2 rounded-full bg-gray-200 hover:bg-gray-300"
+    >
+      <ArrowLeftIcon className="h-5 w-5 text-blue-600" />
+    </button>
 
-          {/* Right Arrow */}
-          <button onClick={scrollRight} className="p-2 rounded-full bg-gray-200 hover:bg-gray-300">
-            <ArrowRightIcon className="h-5 w-5 text-blue-600" />
-          </button>
+    {/* Services Scroll Container */}
+    <div
+      ref={servicesRef}
+      className="service-scroll-container flex overflow-x-auto space-x-6 pb-4"
+    >
+      <div className="service-card flex flex-col items-center text-center p-6 cursor-pointer rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl bg-white border border-gray-300">
+        <div className="bg-blue-600 p-3 rounded-full mb-4 shadow-md">
+          <CreditCardIcon className="h-8 w-8 text-white" />
         </div>
+        <span className="font-semibold text-lg text-gray-800">
+          Bank Cards
+        </span>
       </div>
+
+      <div className="service-card flex flex-col items-center text-center p-6 cursor-pointer rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl bg-white border border-gray-300">
+        <div className="bg-blue-600 p-3 rounded-full mb-4 shadow-md">
+          <UserGroupIcon className="h-8 w-8 text-white" />
+        </div>
+        <span className="font-semibold text-lg text-gray-800">
+          AEPS USSD
+        </span>
+      </div>
+
+      <div className="service-card flex flex-col items-center text-center p-6 cursor-pointer rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl bg-white border border-gray-300">
+        <div className="bg-blue-600 p-3 rounded-full mb-4 shadow-md">
+          <GlobeAltIcon className="h-8 w-8 text-white" />
+        </div>
+        <span className="font-semibold text-lg text-gray-800">UPI</span>
+      </div>
+
+      <div className="service-card flex flex-col items-center text-center p-6 cursor-pointer rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl bg-white border border-gray-300">
+        <div className="bg-blue-600 p-3 rounded-full mb-4 shadow-md">
+          <WalletIcon className="h-8 w-8 text-white" />
+        </div>
+        <span className="font-semibold text-lg text-gray-800">
+          Mobile Wallet
+        </span>
+      </div>
+
+      <div className="service-card flex flex-col items-center text-center p-6 cursor-pointer rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl bg-white border border-gray-300">
+        <div className="bg-blue-600 p-3 rounded-full mb-4 shadow-md">
+          <CreditCardIcon className="h-8 w-8 text-white" />
+        </div>
+        <span className="font-semibold text-lg text-gray-800">
+          Bank Prepaid Cards
+        </span>
+      </div>
+
+      <div className="service-card flex flex-col items-center text-center p-6 cursor-pointer rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl bg-white border border-gray-300">
+        <div className="bg-blue-600 p-3 rounded-full mb-4 shadow-md">
+          <ShoppingCartIcon className="h-8 w-8 text-white" />
+        </div>
+        <span className="font-semibold text-lg text-gray-800">
+          POS Machines
+        </span>
+      </div>
+
+      <div className="service-card flex flex-col items-center text-center p-6 cursor-pointer rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl bg-white border border-gray-300">
+        <div className="bg-blue-600 p-3 rounded-full mb-4 shadow-md">
+          <DevicePhoneMobileIcon className="h-8 w-8 text-white" />
+        </div>
+        <span className="font-semibold text-lg text-gray-800">
+          Micro ATMs
+        </span>
+      </div>
+
+      <div className="service-card flex flex-col items-center text-center p-6 cursor-pointer rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl bg-white border border-gray-300">
+        <div className="bg-blue-600 p-3 rounded-full mb-4 shadow-md">
+          <PhoneIcon className="h-8 w-8 text-white" />
+        </div>
+        <span className="font-semibold text-lg text-gray-800">
+          Mobile Banking
+        </span>
+      </div>
+
+      <div className="service-card flex flex-col items-center text-center p-6 cursor-pointer rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl bg-white border border-gray-300">
+        <div className="bg-blue-600 p-3 rounded-full mb-4 shadow-md">
+          <ComputerDesktopIcon className="h-8 w-8 text-white" />
+        </div>
+        <span className="font-semibold text-lg text-gray-800">
+          Internet Banking
+        </span>
+      </div>
+    </div>
+
+    {/* Right Arrow */}
+    <button
+      onClick={scrollRight}
+      className="p-2 rounded-full bg-gray-200 hover:bg-gray-300"
+    >
+      <ArrowRightIcon className="h-5 w-5 text-blue-600" />
+    </button>
+  </div>
+</div>
+
 
       {/* India's Most-loved Payments App Section */}
       <div className="w-full max-w-6xl mx-auto py-20 flex flex-col md:flex-row items-center justify-between">
@@ -287,35 +349,113 @@ const HomePage = () => {
 </div>
 
  {/* FAQ Section */}
- <div className="w-full max-w-6xl mx-auto py-20">
-        <h2 className="text-3xl font-bold text-blue-600 text-center mb-8" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-          Frequently Asked Questions
-        </h2>
-        <div className="space-y-4">
-          {faqItems.map((item, index) => (
-            <div key={index} className="border-b border-gray-300 pb-4">
-              <button 
-                onClick={() => toggleFAQ(index)}
-                className="w-full text-left text-lg font-medium text-gray-800 flex justify-between items-center"
-              >
-                {item.question}
-                <span>{openFAQ === index ? '-' : '+'}</span>
-              </button>
-              {openFAQ === index && (
-                <motion.div 
-                  initial={{ opacity: 0, height: 0 }}
-                  animate={{ opacity: 1, height: "auto" }}
-                  exit={{ opacity: 0, height: 0 }}
-                  transition={{ duration: 0.3 }}
-                  className="overflow-hidden"
-                >
-                  <p className="text-gray-600 mt-2">{item.answer}</p>
-                </motion.div>
-              )}
-            </div>
-          ))}
-        </div>
-      </div>
+<div className="w-full max-w-6xl mx-auto py-20">
+  <h2
+    className="text-3xl font-bold text-blue-600 text-center mb-8"
+    style={{ fontFamily: "Montserrat, sans-serif" }}
+  >
+    Frequently Asked Questions
+  </h2>
+  <div className="space-y-4">
+    <div className="border-b border-gray-300 pb-4">
+      <button
+        onClick={() => toggleFAQ(0)}
+        className="w-full text-left text-lg font-medium text-gray-800 flex justify-between items-center"
+      >
+        What is OneATM?
+        <span>{openFAQ === 0 ? "-" : "+"}</span>
+      </button>
+      {openFAQ === 0 && (
+        <motion.div
+          initial={{ opacity: 0, height: 0 }}
+          animate={{ opacity: 1, height: "auto" }}
+          exit={{ opacity: 0, height: 0 }}
+          transition={{ duration: 0.3 }}
+          className="overflow-hidden"
+        >
+          <p className="text-gray-600 mt-2">
+            OneATM is a digital solution providing seamless banking services
+            including UPI, mobile wallets, and more for small and large
+            businesses.
+          </p>
+        </motion.div>
+      )}
+    </div>
+
+    <div className="border-b border-gray-300 pb-4">
+      <button
+        onClick={() => toggleFAQ(1)}
+        className="w-full text-left text-lg font-medium text-gray-800 flex justify-between items-center"
+      >
+        How do I join OneATM?
+        <span>{openFAQ === 1 ? "-" : "+"}</span>
+      </button>
+      {openFAQ === 1 && (
+        <motion.div
+          initial={{ opacity: 0, height: 0 }}
+          animate={{ opacity: 1, height: "auto" }}
+          exit={{ opacity: 0, height: 0 }}
+          transition={{ duration: 0.3 }}
+          className="overflow-hidden"
+        >
+          <p className="text-gray-600 mt-2">
+            You can join by clicking the 'Join Now' button and following the
+            registration process.
+          </p>
+        </motion.div>
+      )}
+    </div>
+
+    <div className="border-b border-gray-300 pb-4">
+      <button
+        onClick={() => toggleFAQ(2)}
+        className="w-full text-left text-lg font-medium text-gray-800 flex justify-between items-center"
+      >
+        What services are available through OneATM?
+        <span>{openFAQ === 2 ? "-" : "+"}</span>
+      </button>
+      {openFAQ === 2 && (
+        <motion.div
+          initial={{ opacity: 0, height: 0 }}
+          animate={{ opacity: 1, height: "auto" }}
+          exit={{ opacity: 0, height: 0 }}
+          transition={{ duration: 0.3 }}
+          className="overflow-hidden"
+        >
+          <p className="text-gray-600 mt-2">
+            OneATM offers services such as AEPS USSD, POS machines, mobile
+            wallets, and micro ATMs, among others.
+          </p>
+        </motion.div>
+      )}
+    </div>
+
+    <div className="border-b border-gray-300 pb-4">
+      <button
+        onClick={() => toggleFAQ(3)}
+        className="w-full text-left text-lg font-medium text-gray-800 flex justify-between items-center"
+      >
+        Is there a mobile app for OneATM?
+        <span>{openFAQ === 3 ? "-" : "+"}</span>
+      </button>
+      {openFAQ === 3 && (
+        <motion.div
+          initial={{ opacity: 0, height: 0 }}
+          animate={{ opacity: 1, height: "auto" }}
+          exit={{ opacity: 0, height: 0 }}
+          transition={{ duration: 0.3 }}
+          className="overflow-hidden"
+        >
+          <p className="text-gray-600 mt-2">
+            Yes, OneATM offers a mobile app for convenient banking and payments
+            on the go.
+          </p>
+        </motion.div>
+      )}
+    </div>
+  </div>
+</div>
+
 
 
 
