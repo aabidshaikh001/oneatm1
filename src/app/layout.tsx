@@ -48,9 +48,10 @@ export default function RootLayout() {
         <meta name="twitter:image" content="/path-to-your-twitter-image.jpg" />
 
         <link rel="icon" href="/logox.png" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/logox.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/logox.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/logox.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/logox.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/logox.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/logox.png" />
+
     
       </head>
 

@@ -1,4 +1,5 @@
-'use client'
+"use client"
+
 import React from 'react';
 import {
   FaReact, FaUniversity, FaCreditCard, FaGift, FaMoneyBill,
@@ -104,5 +105,5 @@ const ProductPage = () => {
     </div>
   );
 };
+export default ProductPage
 
-export default ProductPage;

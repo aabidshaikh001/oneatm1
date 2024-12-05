@@ -1,4 +1,5 @@
-'use client'
+"use client"
+
 import React, { useRef, useState, MouseEvent  } from 'react';
 import { 
   CreditCardIcon,
@@ -17,6 +18,7 @@ import { motion } from 'framer-motion';
 import { Link } from "react-router-dom";
 import "./globals.css";
 import Image from 'next/image';
+
 
 
 const HomePage = () => {
@@ -86,7 +88,7 @@ const HomePage = () => {
           style={{
             transform: `perspective(500px) rotateY(${tiltX}deg) rotateX(${tiltY}deg)`,
             transition: 'transform 0.3s ease-out', // Smooth transition for the tilt effect
-          }} width={900} height={900}
+          }} width={900} height={900} priority 
         />
       </div>
   </div>
@@ -212,7 +214,7 @@ const HomePage = () => {
       <div className="w-full max-w-6xl mx-auto py-20 flex flex-col md:flex-row items-center justify-between">
         <div className="md:w-1/2 text-center md:text-left space-y-4">
           <h2 className="text-6xl font-bold text-gray-800">
-            India's Most-loved Payments App
+            India&apos;s Most-loved Payments App
           </h2>
           <p className="text-xl text-gray-600 pb-5">
             Recharge & pay bills, Bank Cards & Micro ATM, Mobile Wallet & UPI, and do a lot more.
@@ -399,7 +401,7 @@ const HomePage = () => {
           className="overflow-hidden"
         >
           <p className="text-gray-600 mt-2">
-            You can join by clicking the 'Join Now' button and following the
+            You can join by clicking the &apos;Join Now&apos; button and following the
             registration process.
           </p>
         </motion.div>
@@ -463,4 +465,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default HomePage

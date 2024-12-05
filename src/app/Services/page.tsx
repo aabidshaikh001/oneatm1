@@ -18,6 +18,7 @@ import {
   BsFillPersonBadgeFill,
 } from "react-icons/bs";
 
+
 interface ServiceCardProps {
   icon: React.ReactNode;
   color: string;
@@ -109,4 +110,5 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ icon, color, title }) => (
   </div>
 );
 
-export default ServicesPage;
+export default ServicesPage
+

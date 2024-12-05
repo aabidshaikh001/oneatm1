@@ -1,9 +1,9 @@
-"use client";
+"use client"
 
 import React, { useState, ChangeEvent, FormEvent } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css"; // Import the CSS for React Toastify
-import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
+import { AiOutlineMail } from "react-icons/ai";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 
 interface FormData {
@@ -95,7 +95,7 @@ const ContactUsPage: React.FC = () => {
         message: "",
       });
       setErrors({});
-    } catch (error) {
+    } catch {
       toast.error("There was an error sending your message. Please try again later.", {
         position: "top-center",
         autoClose: 3000,
@@ -171,6 +171,7 @@ const ContactUsPage: React.FC = () => {
                 type="text"
                 name="firstName"
                 value={formData.firstName}
+                
                 onChange={handleChange}
                 className={`w-full border ${
                   errors.firstName ? "border-red-500" : "border-gray-300"
@@ -261,5 +262,5 @@ const ContactUsPage: React.FC = () => {
     </div>
   );
 };
+export default ContactUsPage
 
-export default ContactUsPage;

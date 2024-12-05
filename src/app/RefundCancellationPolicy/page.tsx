@@ -1,3 +1,5 @@
+"use client"
+
 import React from "react";
 
 const RefundCancellationPolicy = () => {
@@ -91,4 +93,4 @@ const RefundCancellationPolicy = () => {
   );
 };
 
-export default RefundCancellationPolicy;
+export default RefundCancellationPolicy

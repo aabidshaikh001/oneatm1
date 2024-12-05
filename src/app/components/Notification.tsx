@@ -1,4 +1,5 @@
 'use client'
+import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import React, { useState } from 'react';
 import { IoMdDownload } from "react-icons/io";
@@ -30,4 +31,4 @@ function Notification() {
   );
 }
 
-export default Notification;
+export default dynamic (()=>Promise.resolve(Notification),{ssr:false});

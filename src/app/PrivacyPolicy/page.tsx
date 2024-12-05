@@ -1,6 +1,7 @@
+"use client"
 import React from "react";
 
-const PrivacyPolicy = () => {
+const PrivacyPolicy: React.FC = () => {
   return (
     <div className="bg-gray-100 py-10 px-5 mt-10">
       <div className="max-w-5xl mx-auto bg-white shadow-md rounded-lg p-8">
@@ -155,4 +156,5 @@ const PrivacyPolicy = () => {
   );
 };
 
-export default PrivacyPolicy;
+export default PrivacyPolicy
+

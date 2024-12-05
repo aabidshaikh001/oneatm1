@@ -1,5 +1,7 @@
-'use client'
+"use client"
+
 import React from "react";
+
 
 const TermsAndConditions = () => {
   return (
@@ -40,7 +42,7 @@ const TermsAndConditions = () => {
             <li>Use the materials for any commercial purpose or public display.</li>
             <li>Attempt to decompile or reverse engineer any software on OneATM’s website.</li>
             <li>Remove any copyright or proprietary notations from the materials.</li>
-            <li>Transfer the materials to another person or "mirror" the materials on any server.</li>
+            <li>Transfer the materials to another person or &quot;mirror&quot; the materials on any server.</li>
           </ul>
           <p className="text-gray-600 leading-relaxed mt-2">
             This license will automatically terminate if you violate any of these
@@ -53,7 +55,7 @@ const TermsAndConditions = () => {
         <section className="mb-8">
           <h2 className="text-xl font-semibold text-blue-900 mb-2">Disclaimer</h2>
           <p className="text-gray-600 leading-relaxed">
-            The materials on OneATM’s website are provided "as is." OneATM makes no
+            The materials on OneATM’s website are provided &quot;as is.&quot; OneATM makes no
             warranties, expressed or implied, and disclaims all other warranties, including,
             without limitation, implied warranties or conditions of merchantability, fitness
             for a particular purpose, or non-infringement of intellectual property or other
@@ -112,5 +114,4 @@ const TermsAndConditions = () => {
     </div>
   );
 };
-
-export default TermsAndConditions;
+export default TermsAndConditions

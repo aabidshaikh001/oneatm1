@@ -1,4 +1,5 @@
-'use client'
+"use client"
+
 import React from 'react';
 
 import { 
@@ -8,6 +9,7 @@ import {
   BanknotesIcon
 } from '@heroicons/react/24/outline';
 import '@fontsource/montserrat';
+
 
 
 const steps = [
@@ -61,4 +63,5 @@ const GetStartedPage = () => {
   );
 };
 
-export default GetStartedPage;
+export default GetStartedPage
+

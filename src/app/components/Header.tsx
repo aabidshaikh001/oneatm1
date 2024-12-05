@@ -6,6 +6,7 @@ import { IoMenu, IoClose } from "react-icons/io5";
 import { AiFillApi } from "react-icons/ai";
 import { FaUser } from "react-icons/fa6";
 import Image from "next/image";
+import dynamic from "next/dynamic";
 
 type MenuItem = {
   href: string;
@@ -156,4 +157,4 @@ const Header: React.FC = () => {
   );
 };
 
-export default Header;
+export default dynamic (()=>Promise.resolve(Header),{ssr:false});
