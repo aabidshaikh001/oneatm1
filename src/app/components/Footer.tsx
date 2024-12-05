@@ -8,13 +8,13 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer className="bg-blue-100 text-gray-800 pt-16 pb-10">
+    <footer className="bg-blue-100 text-gray-800 pt-16 pb-5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Grid Layout */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 border-b-2 border-gray-300 pb-8">
           {/* Logo & Description */}
           <div className="col-span-1 flex flex-col gap-2 mb-8">
-            <Image src="/logo.png" alt="Kitzone Logo" className="mb-4 w-32" height={200} width={200}/>
+            <Image src="/logo.png" alt="Kitzone Logo" className="mb-4 mr-6 w-32" height={300} width={300}/>
             <p className="text-base">
               OneATM is a venture of OneATM Technology Private Limited, providing exceptional support and services. We offer 180+ services, including unique options to cater to your needs.
             </p>
