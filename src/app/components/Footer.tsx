@@ -67,7 +67,7 @@ const Footer = () => {
           <a href='https://www.facebook.com/p/Oneatm-100094629965731/' aria-label="Facebook" className="text-gray-600 hover:text-blue-500 transition-colors duration-200">
             <FaFacebook fontSize="large" size={30}/>
           </a>
-          <a aria-label="Instagram" className="text-gray-600 hover:text-pink-500 transition-colors duration-200">
+          <a aria-label="Instagram" href='https://www.instagram.com/oneatm1/' className="text-gray-600 hover:text-pink-500 transition-colors duration-200">
             <FaInstagram fontSize="large" size={30} />
           </a>
           <a aria-label="Twitter" className="text-gray-600 hover:text-blue-400 transition-colors duration-200">
@@ -76,7 +76,7 @@ const Footer = () => {
           <a href='https://www.linkedin.com/company/oneatmindia/posts/?feedView=all' aria-label="LinkedIn" className="text-gray-600 hover:text-blue-700 transition-colors duration-200">
             <FaLinkedin fontSize="large" size={30} />
           </a>
-          <a aria-label="YouTube" className="text-gray-600 hover:text-red-500 transition-colors duration-200">
+          <a  aria-label="YouTube" className="text-gray-600 hover:text-red-500 transition-colors duration-200">
             <FaYoutube fontSize="large" size={30} />
           </a>
         </div>
